@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,6 +8,37 @@
 	<link rel="shortcut icon" href="image/index.png"/>
 	<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="dist/jquery-canvas-sparkles.js"></script>
+	<script>
+		$(".demo1").sparkle({
+			color: "#FFFFFF",
+			count: 30,
+			overlap: 0,
+			speed: 1,
+			minSize: 4,
+			maxSize: 7,
+			direction: "both"
+		});
+		$(".demo2").sparkle({
+			color: "rainbow",
+			count: 50,
+			overlap: 0,
+			speed: 1.5,
+			minSize: 5,
+			maxSize: 10,
+			direction: "both"
+		});
+		$(".demo3").sparkle({
+			color: "rainbow",
+			count: 100,
+			overlap: 0,
+			speed: 2,
+			minSize: 5,
+			maxSize: 15,
+			direction: "both"
+		});
+	</script>
 </head>
 
 <body style="background-color: #161A3D">
@@ -53,37 +83,7 @@
 		</div>
 	</div>
 
-	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-	<script src="dist/jquery-canvas-sparkles.js"></script>
-	<script>
-		$(".demo1").sparkle({
-			color: "#FFFFFF",
-			count: 30,
-			overlap: 0,
-			speed: 1,
-			minSize: 4,
-			maxSize: 7,
-			direction: "both"
-		});
-		$(".demo2").sparkle({
-			color: "rainbow",
-			count: 50,
-			overlap: 0,
-			speed: 1.5,
-			minSize: 5,
-			maxSize: 10,
-			direction: "both"
-		});
-		$(".demo3").sparkle({
-			color: "rainbow",
-			count: 100,
-			overlap: 0,
-			speed: 2,
-			minSize: 5,
-			maxSize: 15,
-			direction: "both"
-		});
-	</script>
+
 </body>
 
 </html>
